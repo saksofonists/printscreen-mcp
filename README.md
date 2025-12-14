@@ -1,6 +1,6 @@
 # prtscr-mcp
 
-MCP server for Windows screenshot and window management.
+MCP server for taking screenshots on Windows.
 
 ## Tools
 
@@ -10,9 +10,34 @@ MCP server for Windows screenshot and window management.
 | `screenshot_window` | Capture window by ID or title |
 | `screenshot_screen` | Capture entire screen by index |
 
-## Build
+## Install
+
+### Claude Code
 
 ```bash
+claude mcp add prtscr-mcp -- npx -y github:saksofonists/prtscr-mcp
+```
+
+### Claude Desktop
+
+Add to `%APPDATA%\Claude\claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "prtscr": {
+      "command": "npx",
+      "args": ["-y", "github:saksofonists/prtscr-mcp"]
+    }
+  }
+}
+```
+
+## Build from Source
+
+```bash
+git clone https://github.com/saksofonists/prtscr-mcp
+cd prtscr-mcp
 npm install
 npm run build
 ```
