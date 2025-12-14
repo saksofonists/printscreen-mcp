@@ -1,4 +1,4 @@
-# prtscr-mcp
+# printscreen-mcp
 
 MCP server for taking screenshots on Windows.
 
@@ -15,7 +15,7 @@ MCP server for taking screenshots on Windows.
 ### Claude Code
 
 ```bash
-claude mcp add prtscr-mcp -- npx -y github:saksofonists/prtscr-mcp
+claude mcp add printscreen-mcp -- npx -y github:saksofonists/printscreen-mcp
 ```
 
 ### Claude Desktop
@@ -27,7 +27,7 @@ Add to `%APPDATA%\Claude\claude_desktop_config.json`:
   "mcpServers": {
     "prtscr": {
       "command": "npx",
-      "args": ["-y", "github:saksofonists/prtscr-mcp"]
+      "args": ["-y", "github:saksofonists/printscreen-mcp"]
     }
   }
 }
@@ -36,8 +36,8 @@ Add to `%APPDATA%\Claude\claude_desktop_config.json`:
 ## Build from Source
 
 ```bash
-git clone https://github.com/saksofonists/prtscr-mcp
-cd prtscr-mcp
+git clone https://github.com/saksofonists/printscreen-mcp
+cd printscreen-mcp
 npm install
 npm run build
 ```
